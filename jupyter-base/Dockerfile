@@ -9,7 +9,8 @@ SHELL ["/bin/bash", "-c"]
 ADD entrypoint.sh /
 RUN sudo chmod +x /entrypoint.sh
 ADD spark_install.sh /
-RUN sudo chmod +x /spark_install.sh
+RUN sudo chmod +x /spark_install.sh &&/
+    sudo /spark_install.sh
 
 
 ## env

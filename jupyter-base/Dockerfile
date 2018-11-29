@@ -28,7 +28,7 @@ RUN \
 # RUN sudo pip install --upgrade pip
 
 RUN sudo pip3 install jupyterlab
-RUN sudo pip3 install jupytero
+RUN sudo pip3 install jupyter
 
 ## change user
 

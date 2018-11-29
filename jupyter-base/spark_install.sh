@@ -13,4 +13,4 @@ echo -e "export PATH=\${SPARK_HOME}/bin:\$PATH" >> ~/.bashrc
 echo -e "export PYTHONPATH=\${SPARK_HOME}/python:\$PYTHONPATH" >> ~/.bashrc
 echo -e "export PYSPARK_DRIVER_PYTHON=\"jupyter\"" >> ~/.bashrc
 echo -e "export PYSPARK_DRIVER_PYTHON=OPTS=\"notebook\"" >> ~/.bashrc
-echo -e "export PYSPARK_PYTHON=python3 >> ~/.bashrc
+echo -e "export PYSPARK_PYTHON=python3" >> ~/.bashrc

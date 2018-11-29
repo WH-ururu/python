@@ -8,6 +8,8 @@ LABEL description="jupyter lab"
 SHELL ["/bin/bash", "-c"]
 ADD entrypoint.sh /
 RUN sudo chmod +x /entrypoint.sh
+ADD spark_install.sh /
+RUN sudo chmod +x /spark_install.sh
 
 
 ## env
@@ -26,6 +28,7 @@ RUN \
 # RUN sudo pip install --upgrade pip
 
 RUN sudo pip3 install jupyterlab
+RUN sudo pip3 install jupytero
 
 ## change user
 
